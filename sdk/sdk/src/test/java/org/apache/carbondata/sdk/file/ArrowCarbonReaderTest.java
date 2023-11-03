@@ -74,7 +74,7 @@ public class ArrowCarbonReaderTest extends TestCase {
           .outputPath(path)
           .withLoadOptions(map)
           .withCsvInput(new Schema(fields))
-          .writtenBy("CarbonReaderTest")
+          .writtenBy("CarbonReaderTest2")
           .build();
       byte[] value = "Binary".getBytes();
       for (int i = 0; i < 10; i++) {
