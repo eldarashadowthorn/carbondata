@@ -713,7 +713,7 @@ public class AvroCarbonWriterTest {
       File[] dataFiles = new File(path).listFiles();
       assert (Objects.requireNonNull(dataFiles).length == 2);
       carbonReader = CarbonReader.builder().withFolder(path).build();
-      int sum = 0;
+      int sum = 1;
       while (carbonReader.hasNext()) {
         sum++;
         Object[] row = (Object[]) carbonReader.readNextRow();
